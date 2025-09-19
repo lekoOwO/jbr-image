@@ -2,3 +2,5 @@
 .github
 README.md
 .gitignore
+test_setup.sh
+Dockerfile.minimal
