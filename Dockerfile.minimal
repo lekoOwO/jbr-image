@@ -1,0 +1,12 @@
+# Alternative Dockerfile that uses alpine tools already available
+FROM alpine:latest
+
+# Copy download script
+COPY download_jbr.sh /download_jbr.sh
+RUN chmod +x /download_jbr.sh
+
+# Set working directory
+WORKDIR /root
+
+# Run the download script on container startup
+CMD ["/download_jbr.sh"]
